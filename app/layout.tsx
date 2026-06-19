@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeInitializer } from '@/components/theme-initializer';
 import { Toaster } from '@/components/ui/sonner';
+import { ChatWidget } from '@/components/chatbot/chat-widget';
 
 export const metadata: Metadata = {
     title: 'Patrick Barcelo – Software Developer',
@@ -28,6 +29,7 @@ export default function RootLayout({
                 <ThemeInitializer />
                 {children}
                 <Toaster />
+                <ChatWidget />
             </body>
         </html>
     );
